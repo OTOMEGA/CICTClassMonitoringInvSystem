@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <style>header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ff6600;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    font-weight: bold;
+  }
+
+  input[type="submit"] {
+    padding: 10px;
+    background-color: #ff8800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  footer {
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+  </style>
+  <head>
+    <title>Scheduling Management</title>
+  </head>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Schedule</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <main>
+      <form>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time"><br><br>
+        <label for="event">Event:</label>
+        <input type="text" id="event" name="event"><br><br>
+        <input type="submit" value="Add Event">
+      </form>
+    </main>
+
+  </body>
+  <footer>
+    <p>&copy; 2023 CMKIS</p>
+    <nav>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</html>
+
