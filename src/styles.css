@@ -80,7 +80,7 @@ body {
   font-weight: bold;
   background-color: transparent;
 }
-.box-form .left button:hover {background-color: #3e8e41}
+.box-form .left button:hover {background-color: #776500}
 
 .box-form .left .overlay span a:last-child {
   background: #1dcaff;
@@ -146,4 +146,4 @@ body {
   box-shadow: 0px 4px 20px 0px #c68f28a6;
   background-color: #f7ab30;
 }
-.box-form .right button:hover {background-color: #3e8e41}
+.box-form .right button:hover {background-color: #8a4900}
