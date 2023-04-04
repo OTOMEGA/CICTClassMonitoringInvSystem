@@ -71,12 +71,13 @@ body {
   color: #ffffff;
   font-size: 12px;
   padding: 1px 55px;
-  margin-top: 23%;margin-left: 12%;
+  margin-top: 25%;margin-left: 12%;
   border-radius: 50px;
   border: 2;
   border-color: #ffffff;
   outline: 0;
   box-shadow: 0px 4px 20px 0px #c68f28a6;
+  font-weight: bold;
   background-color: transparent;
 }
 .box-form .left button:hover {background-color: #3e8e41}
@@ -100,6 +101,19 @@ body {
   color: #f7ab30;
   line-height: 0;
 }
+.box-form .right h6 {
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 100;
+  color: #000000;
+  line-height: 0;
+}
+.box-form .right h7 {
+  font-size: 20px;
+  font-weight: 900;
+  color: #000000;
+  line-height: 0;
+}
 .box-form .right p {
   font-size: 14px;
   color: #B0B3B9;
@@ -110,7 +124,7 @@ body {
 .box-form .right input {
   width: 100%; width: 300px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
   font-size: 16px;
   border: none;
   outline: none;
