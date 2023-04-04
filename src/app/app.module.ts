@@ -7,6 +7,7 @@ import { InventoryComponent } from './inventory/inventory.component';
 import { FacultyComponent } from './faculty/faculty.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
+import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { HomeComponent } from './home/home.component';
     InventoryComponent,
     FacultyComponent,
     ScheduleComponent,
-    HomeComponent
+    HomeComponent,
+    AccountcreateComponent
 
   ],
   imports: [

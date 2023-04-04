@@ -4,7 +4,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "Open Sans", sans-serif;
-  color: #333333;
+  color: #000000;
 }
 
 .box-form {
@@ -19,7 +19,7 @@ body {
   flex: 1 1 100%;
   align-items: stretch;
   justify-content: space-between;
-  box-shadow: 0 0 20px 6px #090b6f85;
+  box-shadow: 0 0 20px 6px #00000085;
 }
 @media (max-width: 980px) {
   .box-form {
@@ -131,6 +131,7 @@ body {
   outline: none;
   border-bottom: 2px solid #B0B3B9;
 }
+
 .box-form .right .remember-me--forget-password {
   justify-content: space-between;
   align-items: center;
@@ -148,3 +149,4 @@ body {
   background-color: #f7ab30;
 }
 .box-form .right button:hover {background-color: #8a4900}
+

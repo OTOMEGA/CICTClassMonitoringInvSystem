@@ -6,10 +6,14 @@ import { FacultyComponent } from './faculty/faculty.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { HomeComponent } from './home/home.component';
+import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
 const routes: Routes = [
 {
 path: 'home', component: HomeComponent
 },
+{
+  path: 'accountcreate', component: AccountcreateComponent
+  },
   {
     path: 'admin', component: AdminComponent, children: [
       { path: 'login', component: LoginComponent }
