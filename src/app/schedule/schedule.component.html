@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #ff6600;
+    background-color: #ff8800;
   }
 
   nav ul {
@@ -19,6 +19,7 @@
 
   main {
     padding: 20px;
+    background-color: #fff;
   }
 
   form {
@@ -52,34 +53,41 @@
   <header>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Schedule</a></li>
-        <li><a href="#">Settings</a></li>
+        <ul><a href=" " class="home">Home</a></ul>
+        <ul><a href="#" class="home">Schedule</a></ul>
+        <ul><a href="#" class="home">Settings</a></ul>
       </ul>
     </nav>
   </header>
 
   <body>
     <main>
-      <form>
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date"><br><br>
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time"><br><br>
-        <label for="event">Event:</label>
-        <input type="text" id="event" name="event"><br><br>
-        <input type="submit" value="Add Event">
+      <form class="box">
+        <div class="mbox">
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" class = "mid">
+        </div><br><br>
+        <div class="mbox">
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" class = "mid">
+        </div><br><br>
+        <div class="mbox">
+          <label for="event">Event:</label>
+          <input type="text" id="event" name="event" >
+        </div><br><br>
+        <input type="submit" class="sub" value="Add Event" >
+        <br><br>
       </form>
     </main>
 
   </body>
   <footer>
-    <p>&copy; 2023 CMKIS</p>
+    <p class="fot">&copy; 2023 CMKIS</p>
     <nav>
       <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Service</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#" class="fot">Privacy Policy</a></li>
+        <li><a href="#" class="fot">Terms of Service</a></li>
+        <li><a href="#" class="fot">Contact Us</a></li>
       </ul>
     </nav>
   </footer>
