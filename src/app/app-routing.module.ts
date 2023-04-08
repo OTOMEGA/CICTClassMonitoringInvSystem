@@ -7,25 +7,15 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { HomeComponent } from './home/home.component';
 import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
+
+
 const routes: Routes = [
-{
-path: 'home', component: HomeComponent
-},
-{
-  path: 'accountcreate', component: AccountcreateComponent
-  },
-  {
-    path: 'admin', component: AdminComponent, children: [
-      { path: 'login', component: LoginComponent }
-    ]
-  },
-  {
-    path: '', redirectTo: 'admin', pathMatch: 'full'
-  },
-  { path: 'inventory', component: InventoryComponent },
-  { path: 'schedule', component: ScheduleComponent },
-  { path: '', redirectTo: '/faculty', pathMatch: 'full' },
+  { path: 'admin', component: AdminComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'faculty', component: FacultyComponent },
+  { path: 'home', component: FacultyComponent },
+  { path: 'accountcreate', component: AccountcreateComponent },
+  { path: 'inventory', component: InventoryComponent },
   { path: 'schedule', component: ScheduleComponent },
 
 ];

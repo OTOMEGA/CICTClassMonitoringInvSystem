@@ -8,7 +8,32 @@ import { FacultyComponent } from './faculty/faculty.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { HomeComponent } from './home/home.component';
 import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { Routes, RouterModule } from '@angular/router';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
+const routes: Routes = [
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
+  },
+  {
+    path: 'inventory',
+    component: InventoryComponent
+  },
+  {
+    path: 'faculty',
+    component: FacultyComponent
+  },
+  {
+    path: 'schedule',
+    component: ScheduleComponent
+  }
+];
 
 @NgModule({
   declarations: [
@@ -18,15 +43,14 @@ import { AccountcreateComponent } from './home/accountcreate/accountcreate.compo
     FacultyComponent,
     ScheduleComponent,
     HomeComponent,
-    AccountcreateComponent
-
+    AccountcreateComponent,
+    SidebarComponent,
+    DashboardComponent
   ],
   imports: [
-
     BrowserModule,
     AppRoutingModule,
-
-
+    RouterModule // <--- import RouterModule here
   ],
   providers: [],
   bootstrap: [AppComponent]
