@@ -32,6 +32,7 @@
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  animation: fadeIn 1s;
 }
 .dashboard > .attendance{
   width: 900px;
@@ -40,7 +41,9 @@
   background-color: #fff;
   border-radius: 50px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  animation: fadeIn 1s;
 }
+
 .attendance {
   font-family: Arial, sans-serif;
   border: 1px solid #ddd;
@@ -72,7 +75,6 @@
   font-weight: bold;
   color: orange;
 }
-
 
 .attendance table {
   width: 100%;
@@ -210,26 +212,18 @@
   font-weight: bold;
   font-size: 1.5rem;
 }
-.indicator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 1rem;
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-.dot {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-.present .dot {
-  background-color: green;
-}
-.absent .dot {
-  background-color: red;
-}
-.indicator p {
-  margin: 0;
-  font-weight: bold;
-  font-size: 1.2rem;
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
 }
