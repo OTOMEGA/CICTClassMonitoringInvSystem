@@ -1,1 +1,81 @@
-<p>dashboard works!</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="dashboard.component.css">
+  </head>
+  <body>
+
+
+
+
+    <div class="dashboard">
+      <div class="welcome-admin text-center">
+      <h2>Welcome Admin</h2>
+      <p>Today is {{ currentDate | date:'mediumDate' }}</p>
+      <img src="assets/design.png" alt="calendar image" class="center-image">
+    </div>
+
+    <div class="attendance-status">
+      <h2>Attendance Status</h2>
+      <p>No Data</p>
+    </div>
+
+
+      <div class="attendance">
+        <h2>Attendance Log</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Time In</th>
+            <th>Time Out</th>
+            <th>Status</th>
+          </tr>
+          <tr>
+            <td>No Data</td>
+            <td>No Data</td>
+            <td>No Data</td>
+            <td>No Data</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="today-schedule">
+        <h2>Today's Schedule</h2>
+        <table>
+          <tr>
+            <th>Faculty</th>
+            <th>Time</th>
+            <th>Duration</th>
+
+          </tr>
+          <tr>
+            <td>No Data</td>
+            <td>No Data</td>
+            <td>No Data</td>
+
+          </tr>
+        </table>
+      </div>
+
+      <div class="key-log">
+        <h2>Key Logs</h2>
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Name</th>
+          </tr>
+          <tr>
+            <td>No Data</td>
+            <td>No Data</td>
+            <td>No Data</td>
+
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+  </body>
+</html>

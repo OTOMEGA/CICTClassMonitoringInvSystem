@@ -11,6 +11,11 @@ import { AccountcreateComponent } from './home/accountcreate/accountcreate.compo
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { CalendarComponent } from './calendar/calendar.component';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 const routes: Routes = [
   {
@@ -45,11 +50,15 @@ const routes: Routes = [
     HomeComponent,
     AccountcreateComponent,
     SidebarComponent,
-    DashboardComponent
+    DashboardComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    MatFormFieldModule,
+    FormsModule,
+    AppRoutingModule, MatDatepickerModule,
+    MatNativeDateModule,
     RouterModule // <--- import RouterModule here
   ],
   providers: [],

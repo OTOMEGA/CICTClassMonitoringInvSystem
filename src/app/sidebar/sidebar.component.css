@@ -1,10 +1,12 @@
 .sidebar{
   background: #2D343E;
   transition: all .3s ease;
-  position: fixed;
+  position: sticky;
+  float:left;
   z-index: 1;
+  margin-right: 10px;
   top: 0;
-  width: 5rem;
+  width: 3rem;
   height: 100vh;
   box-shadow: 0.063rem 0 1.25rem 0 #869083;
 }
@@ -12,23 +14,9 @@
 .logo-container {
   display: flex;
   align-items: center;
-  padding: 0.938rem 0.938rem 0 0.938rem;
+
   width: 100%;
 }
-
-.logo{
-  background: #fff;
-  text-align: center;
-  width: 3rem;
-  min-width: 3rem;
-  border-radius: 0.313rem;
-  padding: 0.313rem;
-  font-size: 24px;
-  font-weight: 900;
-  cursor: pointer;
-  border: none;
-}
-
 .logo-text{
   margin-left: 1.5rem;
   font-size: 24px;
@@ -79,13 +67,13 @@
 }
 
 .sidebar-link-icon{
-  
+
   font-size: 22px;
   width: 2rem;
   min-width: 2rem;
   margin: 0 0.5rem;
   text-align: center;
-  
+
 }
 
 .sidebar-link-text{

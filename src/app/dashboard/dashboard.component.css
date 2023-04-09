@@ -1,0 +1,180 @@
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard > div {
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.dashboard > .attendance{
+  width: 900px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.attendance {
+  font-family: Arial, sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  overflow-x: auto;
+  font-weight: bold;
+}
+
+.attendance-status h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+.today-schedule h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+.today-schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  color: gray;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.attendance h2 {
+  text-align: center;
+  font-weight: bold;
+  color: orange;
+}
+
+
+.attendance table {
+  width: 100%;
+  border-collapse: collapse;
+  color: gray;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.attendance th, .attendance td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.attendance th {
+  background-color: #f2f2f2;
+}
+
+.attendance tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.attendance tr:hover {
+  background-color: #ddd;
+}
+
+/* Designs */
+.attendance table {
+  box-shadow: 1px 1px 5px #ccc;
+  border-radius: 5px;
+}
+
+.attendance th {
+  background-color: #eee;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.attendance td {
+  background-color: #fff;
+}
+
+.attendance tr:hover td {
+  background-color: #f5f5f5;
+}
+.dashboard > .today-schedule{
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.welcome-admin {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(112, 112, 112);
+  animation-name: slide-in;
+  animation-duration: 1s;
+}
+
+.welcome-admin h2{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: orange;
+}
+
+.dashboard > .welcome-admin{
+  width: 900px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dashboard > .key-log{
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+}
+.key-log {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: rgb(112, 112, 112);
+  animation-name: slide-in;
+  animation-duration: 1s;
+}
+
+.key-log h2{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: orange;
+}
+.key-log table {
+  width: 100%;
+  border-collapse: collapse;
+  color: gray;
+  margin-top: 10px;
+  font-weight: lighter;
+  white-space: nowrap;
+}

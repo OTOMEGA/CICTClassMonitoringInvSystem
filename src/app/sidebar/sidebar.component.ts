@@ -14,6 +14,9 @@ interface SideBarToggle {
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
+showSidebar() {
+throw new Error('Method not implemented.');
+}
 
 
   @Output() onToggleSideBar: EventEmitter<SideBarToggle> = new EventEmitter();

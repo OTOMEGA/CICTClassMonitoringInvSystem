@@ -1,46 +1,41 @@
 <div class="sidebar" [ngClass]="collapsed ? 'sidebar-collapsed': ''">
   <div class="logo-container">
-    <button class="logo" (click)="toggleCollapse()">A</button>
-    <div class="logo-text" *ngIf="collapsed">Dashboard</div>
+    <button class="logo" (click)="toggleCollapse()" style="background-color: transparent;">
+      <img src="assets/CICT.png" alt="Logo" style="width: 45px; height: 45px;">
+    </button>
+    <div class="logo-text" *ngIf="collapsed">Menu</div>
     <button class="btn-close" *ngIf="collapsed" (click)="closeSidebar()"></button>
   </div>
   <ul class="sidebar-nav">
-    <li class="sidebar-nav-item">
-      <a routerLink="/schedule" class="sidebar-nav-link">
-        <i class="sidebar-link-icon"></i>
-        <span class="sidenav-link-text" *ngIf="collapsed">Add New Schedule</span>
-      </a>
-    </li>
-    
       <li class="sidebar-nav-item">
-        <a routerLink="/home" class="sidebar-nav-link" >
-          <img class="sidebar-link-icon" src="..assets/home.png">
-          <span class="sidenav-link-text" *ngIf="collapsed">Home</span>
+        <a routerLink="/dashboard" class="sidebar-nav-link" >
+          <img class="sidebar-link-icon" src="/assets/dashboard.png">
+          <span class="sidenav-link-text" *ngIf="collapsed">Dashboard</span>
         </a>
       </li>
-    
+
       <li class="sidebar-nav-item">
-        <a routerLink="/faculty" class="sidebar-nav-link">
-          <i class="sidebar-link-icon"></i>
-          <span class="sidenav-link-text" *ngIf="collapsed">Faculty</span>
+        <a routerLink="/schedule" class="sidebar-nav-link">
+          <img class="sidebar-link-icon" src="/assets/calendar.png">
+          <span class="sidenav-link-text" *ngIf="collapsed">Faculty and Schedule Management</span>
         </a>
       </li>
     <li class="sidebar-nav-item">
       <a routerLink="/inventory" class="sidebar-nav-link" >
-        <i class="sidebar-link-icon"></i>
-        <span class="sidenav-link-text" *ngIf="collapsed">Inventory</span>
+        <img class="sidebar-link-icon" src="/assets/folder.png">
+        <span class="sidenav-link-text" *ngIf="collapsed">Module</span>
       </a>
     </li>
     <li class="sidebar-nav-item">
       <a routerLink="/settings" class="sidebar-nav-link" >
-        <i class="sidebar-link-icon"></i>
+        <img class="sidebar-link-icon" src="/assets/paper.png">
         <span class="sidenav-link-text" *ngIf="collapsed">Reports</span>
       </a>
     </li>
     <li class="sidebar-nav-item">
       <a routerLink="#" class="sidebar-nav-link" >
-        <i class="sidebar-link-icon"></i>
-        <span class="sidenav-link-text" *ngIf="collapsed">User</span>
+        <img class="sidebar-link-icon" src="/assets/star.png">
+        <span class="sidenav-link-text" *ngIf="collapsed">Content Management</span>
       </a>
     </li>
     <li class="sidebar-nav-item">

@@ -7,6 +7,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { HomeComponent } from './home/home.component';
 import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'accountcreate', component: AccountcreateComponent },
   { path: 'inventory', component: InventoryComponent },
   { path: 'schedule', component: ScheduleComponent },
+  { path: 'dashboard', component: DashboardComponent },
 
 ];
 
