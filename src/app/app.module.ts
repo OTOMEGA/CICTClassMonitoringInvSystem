@@ -16,6 +16,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { CalendarComponent } from './calendar/calendar.component';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { AttendanceChartComponent } from './attendance-chart/attendance-chart.component';
 
 const routes: Routes = [
   {
@@ -51,15 +52,18 @@ const routes: Routes = [
     AccountcreateComponent,
     SidebarComponent,
     DashboardComponent,
-    CalendarComponent
+    CalendarComponent,
+    AttendanceChartComponent
   ],
   imports: [
     BrowserModule,
     MatFormFieldModule,
     FormsModule,
-    AppRoutingModule, MatDatepickerModule,
+    AppRoutingModule,
+    MatDatepickerModule,
     MatNativeDateModule,
-    RouterModule // <--- import RouterModule here
+    RouterModule.forRoot(routes),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

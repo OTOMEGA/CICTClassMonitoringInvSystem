@@ -1,3 +1,24 @@
+.welcome-admin {
+  position: relative;
+}
+
+.clock {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+.clock .time {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+
+  border-radius: 5px;
+}
+
+
 .dashboard {
   display: flex;
   flex-wrap: wrap;
@@ -177,4 +198,38 @@
   margin-top: 10px;
   font-weight: lighter;
   white-space: nowrap;
+}
+.attendance-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+.attendance-status h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.present .dot {
+  background-color: green;
+}
+.absent .dot {
+  background-color: red;
+}
+.indicator p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
