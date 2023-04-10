@@ -17,7 +17,6 @@ import { CalendarComponent } from './calendar/calendar.component';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AttendanceChartComponent } from './attendance-chart/attendance-chart.component';
-
 const routes: Routes = [
   {
     path: '',

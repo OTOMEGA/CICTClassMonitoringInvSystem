@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { AccountcreateComponent } from './home/accountcreate/accountcreate.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
-
 const routes: Routes = [
   { path: 'admin', component: AdminComponent },
   { path: 'login', component: LoginComponent },
